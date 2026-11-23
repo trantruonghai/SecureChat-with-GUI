@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>SecureChat.Client.Gui</RootNamespace>
+    <AssemblyName>SecureChat.Gui</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Dùng lại toàn bộ Network / Services / Security / Models của Client console -->
+    <ProjectReference Include="..\SecureChat.Client\SecureChat.Client.csproj" />
+  </ItemGroup>
+
+</Project>
